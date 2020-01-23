@@ -11,7 +11,7 @@ let fruits = ["سیب", "گلابی", "پرتقال"];
 
 // درج یک مقدار جدید به آرایه کپی شده
 let shoppingCart = fruits;
-shoppingCart.push("Banana");
+shoppingCart.push("موز");
 
 // چه تعداد مقدار در آرایه fruits وجود دارد
 alert( fruits.length ); // ?
