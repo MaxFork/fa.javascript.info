@@ -1,4 +1,4 @@
-Please note the subtle, but important detail of the solution. We don't convert `value` to number instantly after `prompt`, because after `value = +value` we would not be able to tell an empty string (stop sign) from the zero (valid number). We do it later instead.
+لطفاً به جزئیات ظریف و مهم راه حل توجه کنید. ما "value" را بلافاصله پس از دریافت از کاربر توسط "prompt" به عدد تبدیل نمی کنیم ، زیرا اگر این تبدیل را انجام دهیم بعد از `value = +value` نمی توانیم تفاوت یک رشته خالی را از عدد ظصفر (که یک عدد معتبر است) تشخیص دهیم. بنابراین بعداً این کار را می کنیم.
 
 
 ```js run demo
