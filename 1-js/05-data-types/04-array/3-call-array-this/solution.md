@@ -12,4 +12,5 @@ arr.push(function() {
 arr[2](); // "a","b",function
 ```
 
-The array has 3 values: initially it had two, plus the function. 
+آرایه 3 مقدار دارد: در ابتدا دارای دو مقدار بود اما بعد از آن یک تابع اضافه شد.
+
