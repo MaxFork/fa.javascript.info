@@ -1,10 +1,10 @@
 
 
 ```js run
-let styles = ["Jazz", "Blues"];
-styles.push("Rock-n-Roll");
-styles[Math.floor((styles.length - 1) / 2)] = "Classics";
+let styles = ["موسیقی جاز", "نوعی سرود وموسیقی جاز"];
+styles.push("رقص راک اندرول");
+styles[Math.floor((styles.length - 1) / 2)] = "موسیقی کلاسیک";
 alert( styles.shift() );
-styles.unshift("Rap", "Reggae");
+styles.unshift("رپ", "موسیقی رگی");
 ```
 
