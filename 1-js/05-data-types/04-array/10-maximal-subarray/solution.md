@@ -57,9 +57,9 @@ alert( getMaxSubSum([1, 2, 3]) ); // 6
 alert( getMaxSubSum([100, -9, 2, -3, 5]) ); // 100
 ```
 
-The solution has a time complexety of [O(n<sup>2</sup>)](https://en.wikipedia.org/wiki/Big_O_notation). In other words, if we increase the array size 2 times, the algorithm will work 4 times longer.
+راه حل دارای پیچیدگی زمانی [O(n<sup>2</sup>)](https://en.wikipedia.org/wiki/Big_O_notation) است. به عبارت دیگر ، اگر اندازه آرایه را 2 بار افزایش دهیم ، الگوریتم 4 برابر بیشتر و طولانی تر کار خواهد کرد.
 
-For big arrays (1000, 10000 or more items) such algorithms can lead to a serious sluggishness.
+برای آرایه های بزرگ (1000 ، 10000 مورد یا بیشتر) چنین الگوریتم هایی می توانند به یک کندی جدی منجر شوند.
 
 # راه حل سریع و پر سرعت
 
