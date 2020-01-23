@@ -1,17 +1,17 @@
-The result is `4`:
+خروجی کد ذکر شده `4` است:
 
 
 ```js run
-let fruits = ["Apples", "Pear", "Orange"];
+let fruits = ["سیب", "گلابی", "پرتقال"];
 
 let shoppingCart = fruits;
 
-shoppingCart.push("Banana");
+shoppingCart.push("موز");
 
 *!*
 alert( fruits.length ); // 4
 */!*
 ```
 
-That's because arrays are objects. So both `shoppingCart` and `fruits` are the references to the same array.
+دلیل این امر این است که آرایه ها اشیاء هستند. بنابراین ، هر دو «shoppingCart» و «fruits» ارجاع به همان آرایه دارند.
 
