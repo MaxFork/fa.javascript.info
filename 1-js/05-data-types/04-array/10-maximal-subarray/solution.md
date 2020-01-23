@@ -4,7 +4,7 @@
 
 ساده ترین راه ، گرفتن هر عنصر و محاسبه جمع تمام زیر مجموعه ها که از همان شروع می شود.
 
-به عنوان مثال ، برای [[-1 ، 2 ، 3 ، -9 ، 11] `:
+به عنوان مثال ، برای [[-1 ، 2 ، 3 ، -9 ، 11] :
 
 ```js no-beautify
 // Starting from -1:
@@ -63,9 +63,11 @@ For big arrays (1000, 10000 or more items) such algorithms can lead to a serious
 
 # راه حل سریع و پر سرعت
 
+بیایید آرایه را طی کنیم و مقدار جزئی عناصر فعلی را در متغیر `s نگه داریم. اگر در بعضی از نقاط 's منفی شود ،' s = 0 'را اختصاص دهید. حداکثر جواب همه اینها خواهد بود.
+
 Let's walk the array and keep the current partial sum of elements in the variable `s`. If `s` becomes negative at some point, then assign `s=0`. The maximum of all such `s` will be the answer.
 
-If the description is too vague, please see the code, it's short enough:
+اگر توضیحات خیلی مبهم است ، لطفاً کد را ببینید ، به اندازه کافی کوتاه است:
 
 ```js run
 function getMaxSubSum(arr) {
@@ -89,6 +91,6 @@ alert( getMaxSubSum([1, 2, 3]) ); // 6
 alert( getMaxSubSum([-1, -2, -3]) ); // 0
 ```
 
-The algorithm requires exactly 1 array pass, so the time complexity is O(n).
+این الگوریتم دقیقاً به 1 آرایه نیاز دارد ، بنابراین پیچیدگی زمان O(n) است.
 
-You can find more detail information about the algorithm here: [Maximum subarray problem](http://en.wikipedia.org/wiki/Maximum_subarray_problem). If it's still not obvious why that works, then please trace the algorithm on the examples above, see how it works, that's better than any words.
+می توانید اطلاعات بیشتر در مورد الگوریتم را در اینجا بیابید: [Maximum subarray problem](http://en.wikipedia.org/wiki/Maximum_subarray_problem). اگر هنوز مشخص نیست که چرا این کار می کند ، لطفاً الگوریتم را در مثالهای بالا ردیابی کنید ، ببینید که چگونه کار می کند ، بهتر از هر کلمه است.
