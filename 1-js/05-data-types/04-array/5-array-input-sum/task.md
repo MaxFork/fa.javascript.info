@@ -1,15 +1,15 @@
-importance: 4
+اهمیت: 4
 
 ---
 
-# Sum input numbers
+# جمع اعدادی ورودی
 
-Write the function `sumInput()` that:
+تابعی به نام `sumInput()` بنویسید که:
 
-- Asks the user for values using `prompt` and stores the values in the array.
-- Finishes asking when the user enters a non-numeric value, an empty string, or presses "Cancel".
-- Calculates and returns the sum of array items.
+- از کاربر مقادیری را با استفاده از `prompt` دریافت کنید و آنها را در یک آرایه ذخیره کنید.
+- پرسش مقدار جدید را وقتی که کاربر یک مقدار غیر عددی یا یک رشته خالی وارد می کند یا Cancel می کند تمام کنید.
+- جمع اعضای آرایه را محاسبه و برگردانید.
 
-P.S. A zero `0` is a valid number, please don't stop the input on zero.
+قابل ذکر است: مقدار صفر «0» یک عدد معتبر است ، لطفا برنامه را روی صفر متوقف نکنید.
 
 [demo]
