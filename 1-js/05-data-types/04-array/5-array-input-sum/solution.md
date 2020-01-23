@@ -10,7 +10,7 @@ function sumInput() {
 
     let value = prompt("A number please?", 0);
 
-    // should we cancel?
+    // باید انصراف دهیم؟
     if (value === "" || value === null || !isFinite(value)) break;
 
     numbers.push(+value);
