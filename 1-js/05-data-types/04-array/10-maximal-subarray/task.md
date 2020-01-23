@@ -1,16 +1,17 @@
-importance: 2
+اهمیت: 2
 
 ---
 
-# A maximal subarray
+# بزرگترین زیر عضو یک آرایه
 
-The input is an array of numbers, e.g. `arr = [1, -2, 3, 4, -9, 6]`.
+ورودی مجموعه ای از اعداد است ، به عنوان مثال `arr = [1, -2, 3, 4, -9, 6]`.
 
-The task is: find the contiguous subarray of `arr` with the maximal sum of items.
+وظیفه این است که پیوسته زیر عضو آرایه `arr`را با بزرگترین مجموع عنصر ها پیدا کنید.
 
-Write the function `getMaxSubSum(arr)` that will return that sum.
+تابع `getMaxSubSum(arr)` را بنویسید که مجموع را برمی گرداند.
 
-For instance: 
+
+برای مثال:
 
 ```js
 getMaxSubSum([-1, *!*2, 3*/!*, -9]) = 5 (the sum of highlighted items)
