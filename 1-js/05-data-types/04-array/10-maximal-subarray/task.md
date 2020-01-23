@@ -14,7 +14,7 @@
 برای مثال:
 
 ```js
-getMaxSubSum([-1, *!*2, 3*/!*, -9]) = 5 (the sum of highlighted items)
+getMaxSubSum([-1, *!*2, 3*/!*, -9]) = 5 (مجموع موارد برجسته)
 getMaxSubSum([*!*2, -1, 2, 3*/!*, -9]) = 6
 getMaxSubSum([-1, 2, 3, -9, *!*11*/!*]) = 11
 getMaxSubSum([-2, -1, *!*1, 2*/!*]) = 3
@@ -22,10 +22,10 @@ getMaxSubSum([*!*100*/!*, -9, 2, -3, 5]) = 100
 getMaxSubSum([*!*1, 2, 3*/!*]) = 6 (take all)
 ```
 
-If all items are negative, it means that we take none (the subarray is empty), so the sum is zero:
+اگر همه موارد منفی باشد ، به این معنی است که هیچ کدام را نمی گیریم (زیر عضو خالی است) ، بنابراین مجموع صفر است:
 
 ```js
 getMaxSubSum([-1, -2, -3]) = 0
 ```
 
-Please try to think of a fast solution: [O(n<sup>2</sup>)](https://en.wikipedia.org/wiki/Big_O_notation) or even O(n) if you can.
+لطفاً در صورت امکان به یک راه حل سریع فکر کنید: [O(n<sup>2</sup>)](https://en.wikipedia.org/wiki/Big_O_notation) یا حتی O(n).
