@@ -1,10 +1,10 @@
-# The slow solution
+# راه حل کم سرعت و کند
 
-We can calculate all possible subsums.
+ما می توانیم تمام زیرمجموعه های احتمالی را محاسبه کنیم.
 
-The simplest way is to take every element and calculate sums of all subarrays starting from it.
+ساده ترین راه ، گرفتن هر عنصر و محاسبه جمع تمام زیر مجموعه ها که از همان شروع می شود.
 
-For instance, for `[-1, 2, 3, -9, 11]`:
+به عنوان مثال ، برای [[-1 ، 2 ، 3 ، -9 ، 11] `:
 
 ```js no-beautify
 // Starting from -1:
@@ -33,7 +33,7 @@ For instance, for `[-1, 2, 3, -9, 11]`:
 -11
 ```
 
-The code is actually a nested loop: the external loop over array elements, and the internal counts subsums starting with the current element.
+این کد در واقع یک حلقه تو در تو است: حلقه خارجی بر روی عناصر آرایه ، و داخلی زیر عناصر شمارش داخلی که از همان عنصر شروع می شود را شمارش می کند.
 
 ```js run
 function getMaxSubSum(arr) {
@@ -61,7 +61,7 @@ The solution has a time complexety of [O(n<sup>2</sup>)](https://en.wikipedia.or
 
 For big arrays (1000, 10000 or more items) such algorithms can lead to a serious sluggishness.
 
-# Fast solution
+# راه حل سریع و پر سرعت
 
 Let's walk the array and keep the current partial sum of elements in the variable `s`. If `s` becomes negative at some point, then assign `s=0`. The maximum of all such `s` will be the answer.
 
