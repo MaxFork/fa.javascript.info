@@ -1,10 +1,10 @@
-importance: 5
+اهمیت: 5
 
 ---
 
-# Calling in an array context
+# دسترسی به اعضای آرایه
 
-What is the result? Why?
+نتیجه چیست؟ چرا؟
 
 ```js
 let arr = ["a", "b"];
