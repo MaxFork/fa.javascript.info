@@ -7,29 +7,29 @@
 به عنوان مثال ، برای [[-1 ، 2 ، 3 ، -9 ، 11] :
 
 ```js no-beautify
-// Starting from -1:
+// شروع از -1:
 -1
 -1 + 2
 -1 + 2 + 3
 -1 + 2 + 3 + (-9)
 -1 + 2 + 3 + (-9) + 11
 
-// Starting from 2:
+// شروع از 2:
 2
 2 + 3
 2 + 3 + (-9)
 2 + 3 + (-9) + 11
 
-// Starting from 3:
+// شروع از 3:
 3
 3 + (-9)
 3 + (-9) + 11
 
-// Starting from -9
+// شروع از -9
 -9
 -9 + 11
 
-// Starting from -11
+// شروع از -11
 -11
 ```
 
@@ -63,9 +63,7 @@ alert( getMaxSubSum([100, -9, 2, -3, 5]) ); // 100
 
 # راه حل سریع و پر سرعت
 
-بیایید آرایه را طی کنیم و مقدار جزئی عناصر فعلی را در متغیر `s نگه داریم. اگر در بعضی از نقاط 's منفی شود ،' s = 0 'را اختصاص دهید. حداکثر جواب همه اینها خواهد بود.
-
-Let's walk the array and keep the current partial sum of elements in the variable `s`. If `s` becomes negative at some point, then assign `s=0`. The maximum of all such `s` will be the answer.
+بیایید آرایه را طی کنیم و مقدار جزئی عناصر فعلی را در متغیر `s` نگه داریم. اگر در بعضی از نقاط `s` منفی شود، `s = 0` را اختصاص دهید. حداکثر جواب همه اینها خواهد بود.
 
 اگر توضیحات خیلی مبهم است ، لطفاً کد را ببینید ، به اندازه کافی کوتاه است:
 
@@ -74,10 +72,10 @@ function getMaxSubSum(arr) {
   let maxSum = 0;
   let partialSum = 0;
 
-  for (let item of arr) { // for each item of arr
-    partialSum += item; // add it to partialSum
-    maxSum = Math.max(maxSum, partialSum); // remember the maximum
-    if (partialSum < 0) partialSum = 0; // zero if negative
+  for (let item of arr) { // برای هر عنصر از آرایه arr
+    partialSum += item; // افزودن مقدار آن به متعییر partialSum
+    maxSum = Math.max(maxSum, partialSum); // تشخیص بزرگتر بودن کدام مقدار و ثبت آن
+    if (partialSum < 0) partialSum = 0; // اگر منفی باشد برابر با صفر کنیم
   }
 
   return maxSum;
